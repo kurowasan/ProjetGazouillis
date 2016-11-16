@@ -52,5 +52,6 @@ twitter_config.py
 data/*
 tmp/*
 tweets/*
+experiments/*
 .ipynb_checkpoints/*
 Ressources/*
