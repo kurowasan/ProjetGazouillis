@@ -21,13 +21,9 @@ def training(path, model, dataset, index_train, index_valid, D, batch_size,
     create_log(path, settings)
     # Save architecture
     save_architecture(model, path)
-    # Save weights after initialization
-    model.save_weights(os.path.join(path_weights, "after_initialization.weights"),
-                       overwrite=True)
-
     # Callbacks
     early_stopping = EarlyStopping(monitor="val_loss", patience=patience)
-    model_saver = ModelSaver(path, os.path.join(path, "weights"), monitor="val_loss")
+    model_saver = ModelSaver(path, os.path.join(path, "weights"), monitor="val_loss", h5py=False)
     # Argument to give to generators
     train_generator_args = [dataset, index_train, batch_size, D]
     valid_generator_args = [dataset, index_valid, 2*batch_size, D]

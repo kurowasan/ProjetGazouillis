@@ -55,17 +55,28 @@ class ModelSaver(Callback):
     Everything is stored using pickle.
     """
 
-    def __init__(self, path, path_weights, monitor, verbose=1):
+    def __init__(self, path, path_weights, monitor, verbose=1, h5py=False):
         super(Callback, self).__init__()
         self.verbose = verbose
         self.path = path
         self.path_weights = path_weights
         self.monitor = monitor
         self.best = np.Inf
+        self.h5py = h5py
 
+    def save_weights(self, path):
+        if self.h5py: # H5PY not available : save weights using np.save
+            w = self.model.get_weights()
+            np.save(path+".npy", w)
+        else:
+            self.model.save_weights(path + ".h5py", overwrite=True)
 
     def on_epoch_begin(self, epoch, logs={}):
         self.epoch_start = time.time()
+        # Saving weights just after initialization
+        if epoch == 0:
+            save_path = os.path.join(self.path_weights, "after_initialization")
+            self.save_weights(save_path)
 
     def on_epoch_end(self, epoch, logs={}):
         self.epoch_end = time.time()
@@ -77,12 +88,12 @@ class ModelSaver(Callback):
         if condition:
             # Save weights as "best_model.weights"
             self.best = monitor
-            save_path = os.path.join(self.path_weights, "best_model.weights")
-            self.model.save_weights(save_path, overwrite=True)
+            save_path = os.path.join(self.path_weights, "best_model")
+            self.save_weights(save_path)
         else:
             # Save weights as "last_epoch.weights"
-            save_path = os.path.join(self.path_weights, "last_epoch.weights")
-            self.model.save_weights(save_path, overwrite=True)
+            save_path = os.path.join(self.path_weights, "last_epoch")
+            self.save_weights(save_path)
 
         # Log file management
         if self.verbose > 0:
