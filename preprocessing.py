@@ -1,9 +1,8 @@
 __author__ = 'GazouillisTeam'
 
-
 import numpy as np
 
-def split_dataset(dataset, split_rate=[0.9, 0.05, 0.05], seed=123):
+def split_dataset(dataset, split_rate=[0.95, 0.01, 0.04], seed=123):
     # index = 1,2,3,...,N
     N = dataset.shape[0]
     index = range(dataset.shape[0])
