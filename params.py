@@ -12,10 +12,11 @@ D = 64 # 62 chars + 1 extra char to indicate to 'end' of a tweet + 1 extra dim f
 ### Training params ###
 LR = 1e-3 # learning rate
 B  = 32  # batch size
-NHIDDEN = 128
-DROPOUT_RATE = 0.1
+NNEURONSH = 128
+NHIDDEN = 1
+DROPOUT_RATE = 0
 PATH_DATA = "/Tmp/augustar/data/dataset.npy" #"/data/lisa/exp/bergegu/gazouillis/data/dataset.npy"
 PATH_EXPERIMENT = "/Tmp/augustar/experiments/name" #"/data/lisa/exp/bergegu/gazouillis/experiments/causalCNN_debug"
 NB_EPOCHS = 1000
-NB_SAMPLES_PER_EPOCH = B*int(5e5 / B) # around 500 000
+NB_SAMPLES_PER_EPOCH = B*int(5e5  / B) # around 500 000
 PATIENCE = 20
