@@ -65,7 +65,7 @@ class ModelSaver(Callback):
         self.h5py = h5py
 
     def save_weights(self, path):
-        if self.h5py: # H5PY not available : save weights using np.save
+        if not self.h5py: # H5PY not available : save weights using np.save
             w = self.model.get_weights()
             np.save(path+".npy", w)
         else:
