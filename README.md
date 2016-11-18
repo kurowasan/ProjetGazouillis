@@ -41,3 +41,12 @@ PATH_DATA = "/Tmp/augustar/data/dataset.npy"
 
 PATH_EXPERIMENT = "/Tmp/augustar/experiments/new_name"
 
+### Screen command
+
+screen
+
+#lancer un calcul sur la machine
+
+Ctrl + A + D #pour se détacher du terminal courant
+
+screen -RD #pour se rattacher au terminal précédemment détaché
