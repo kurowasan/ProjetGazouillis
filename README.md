@@ -31,6 +31,8 @@ PATH_DATA = "/data/lisa/exp/bergegu/gazouillis/data/dataset.npy"
 
 PATH_EXPERIMENT = "/data/lisa/exp/bergegu/gazouillis/experiments/new_name"
 
+Commande : THEANO_FLAGS=mode=FAST_RUN,device=gpu0,floatX=float32 python Documents/ProjetGazouillis/base_script.py
+
 ### Compte augustar
 
 Password : upq_xehq!ay5b(GD
