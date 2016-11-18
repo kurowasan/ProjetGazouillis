@@ -35,7 +35,7 @@ PATH_EXPERIMENT = "/data/lisa/exp/bergegu/gazouillis/experiments/new_name"
 
 Password : upq_xehq!ay5b(GD
 
-dataset.py à transférer à chaque fois en local sur la machine réservée.
+dataset.npy à transférer à chaque fois en local sur la machine réservée.
 
 PATH_DATA = "/Tmp/augustar/data/dataset.npy"
 
