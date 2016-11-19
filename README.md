@@ -31,13 +31,24 @@ PATH_DATA = "/data/lisa/exp/bergegu/gazouillis/data/dataset.npy"
 
 PATH_EXPERIMENT = "/data/lisa/exp/bergegu/gazouillis/experiments/new_name"
 
+Commande : THEANO_FLAGS=mode=FAST_RUN,device=gpu0,floatX=float32 python Documents/ProjetGazouillis/base_script.py
+
 ### Compte augustar
 
 Password : upq_xehq!ay5b(GD
 
-dataset.py à transférer à chaque fois en local sur la machine réservée.
+dataset.npy à transférer à chaque fois en local sur la machine réservée.
 
 PATH_DATA = "/Tmp/augustar/data/dataset.npy"
 
 PATH_EXPERIMENT = "/Tmp/augustar/experiments/new_name"
 
+### Screen command
+
+screen
+
+#lancer un calcul sur la machine
+
+Ctrl + A + D #pour se détacher du terminal courant
+
+screen -RD #pour se rattacher au terminal précédemment détaché

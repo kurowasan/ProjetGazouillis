@@ -5,7 +5,7 @@ from keras.layers import Input, LSTM, Masking, Dropout, TimeDistributed, Dense, 
     BatchNormalization, AtrousConvolution1D
 from keras.optimizers import Adam
 
-def get_LSTM_v1(T, D, lr, nhidden, drop_rate):
+def get_LSTM_v1(T, D, lr, nhidden, nneuronsh, drop_rate):
     # Input layer
     inputs = Input((T, D))
     # Masking "only-0" input features
@@ -13,9 +13,9 @@ def get_LSTM_v1(T, D, lr, nhidden, drop_rate):
     # Hidden layers
     for i in range(nhidden):
         if i == 0:
-            hidden  = LSTM(128, return_sequences=True)(masked)
+            hidden  = LSTM(nneuronsh, return_sequences=True)(masked)
         else:
-            hidden  = LSTM(128, return_sequences=True)(dropout)
+            hidden  = LSTM(nneuronsh, return_sequences=True)(dropout)
         dropout = Dropout(drop_rate)(hidden)
     # Output layer : linear TimeDistributedDense + softmax
     decoder = TimeDistributed(Dense(D))(dropout) # Apply the same dense layer on each timestep
