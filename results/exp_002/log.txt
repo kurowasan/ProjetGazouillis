@@ -1,0 +1,144 @@
+Path : /Tmp/augustar/experiments/exp_002
+Dataset shape :(15075059, 161, 1)
+Ntrain : 14321306
+Nvalid : 150750
+Dim : 64
+Batch size : 32
+Nb samples per epoch : 500000
+Nb epochs : 1000
+Patience : 20
+####
+Started on 18/11/2016 at 12:40:54
+####
+Epoch 0 took 2131 s: loss : 2.1022 # val_loss : 1.9424 # 	BEST####
+Epoch 1 took 2044 s: loss : 1.8988 # val_loss : 1.8682 # 	BEST####
+Epoch 2 took 2036 s: loss : 1.8487 # val_loss : 1.8352 # 	BEST####
+Epoch 3 took 2067 s: loss : 1.8251 # val_loss : 1.8189 # 	BEST####
+Epoch 4 took 2039 s: loss : 1.8100 # val_loss : 1.8060 # 	BEST####
+Epoch 5 took 2063 s: loss : 1.7991 # val_loss : 1.7963 # 	BEST####
+Epoch 6 took 2101 s: loss : 1.7921 # val_loss : 1.7896 # 	BEST####
+Epoch 7 took 2070 s: loss : 1.7846 # val_loss : 1.7851 # 	BEST####
+Epoch 8 took 2137 s: loss : 1.7801 # val_loss : 1.7802 # 	BEST####
+Epoch 9 took 2044 s: loss : 1.7765 # val_loss : 1.7761 # 	BEST####
+Epoch 10 took 2002 s: loss : 1.7728 # val_loss : 1.7737 # 	BEST####
+Epoch 11 took 2001 s: loss : 1.7697 # val_loss : 1.7713 # 	BEST####
+Epoch 12 took 2023 s: loss : 1.7679 # val_loss : 1.7678 # 	BEST####
+Epoch 13 took 2038 s: loss : 1.7655 # val_loss : 1.7659 # 	BEST####
+Epoch 14 took 1999 s: loss : 1.7638 # val_loss : 1.7649 # 	BEST####
+Epoch 15 took 2016 s: loss : 1.7662 # val_loss : 1.7660 # ####
+Epoch 16 took 2000 s: loss : 1.7607 # val_loss : 1.7625 # 	BEST####
+Epoch 17 took 1994 s: loss : 1.7617 # val_loss : 1.7604 # 	BEST####
+Epoch 18 took 1941 s: loss : 1.7581 # val_loss : 1.7599 # 	BEST####
+Epoch 19 took 1954 s: loss : 1.7561 # val_loss : 1.7580 # 	BEST####
+Epoch 20 took 1934 s: loss : 1.7556 # val_loss : 1.7569 # 	BEST####
+Epoch 21 took 1953 s: loss : 1.7554 # val_loss : 1.7557 # 	BEST####
+Epoch 22 took 1970 s: loss : 1.7532 # val_loss : 1.7543 # 	BEST####
+Epoch 23 took 1957 s: loss : 1.7526 # val_loss : 1.7538 # 	BEST####
+Epoch 24 took 1950 s: loss : 1.7600 # val_loss : 1.7789 # ####
+Epoch 25 took 1978 s: loss : 1.7661 # val_loss : 1.7623 # ####
+Epoch 26 took 1971 s: loss : 1.7589 # val_loss : 1.7601 # ####
+Epoch 27 took 1975 s: loss : 1.7576 # val_loss : 1.7551 # ####
+Epoch 28 took 1976 s: loss : 1.7536 # val_loss : 1.7547 # ####
+Epoch 29 took 1966 s: loss : 1.7673 # val_loss : 1.7547 # ####
+Epoch 30 took 1987 s: loss : 1.7567 # val_loss : 1.7542 # ####
+Epoch 31 took 1971 s: loss : 1.7504 # val_loss : 1.7518 # 	BEST####
+Epoch 32 took 1955 s: loss : 1.7489 # val_loss : 1.7501 # 	BEST####
+Epoch 33 took 1980 s: loss : 1.7484 # val_loss : 1.7490 # 	BEST####
+Epoch 34 took 1981 s: loss : 1.7469 # val_loss : 1.7477 # 	BEST####
+Epoch 35 took 1983 s: loss : 1.7460 # val_loss : 1.7466 # 	BEST####
+Epoch 36 took 2013 s: loss : 1.7454 # val_loss : 1.7483 # ####
+Epoch 37 took 1979 s: loss : 1.7445 # val_loss : 1.7456 # 	BEST####
+Epoch 38 took 1995 s: loss : 1.7429 # val_loss : 1.7461 # ####
+Epoch 39 took 2021 s: loss : 1.7435 # val_loss : 1.7441 # 	BEST####
+Epoch 40 took 2064 s: loss : 1.7475 # val_loss : 1.7456 # ####
+Epoch 41 took 2044 s: loss : 1.7423 # val_loss : 1.7424 # 	BEST####
+Epoch 42 took 2097 s: loss : 1.7418 # val_loss : 1.7430 # ####
+Epoch 43 took 2038 s: loss : 1.7409 # val_loss : 1.7435 # ####
+Epoch 44 took 2031 s: loss : 1.7402 # val_loss : 1.7421 # 	BEST####
+Epoch 45 took 2085 s: loss : 1.7400 # val_loss : 1.7409 # 	BEST####
+Epoch 46 took 2024 s: loss : 1.7396 # val_loss : 1.7416 # ####
+Epoch 47 took 1987 s: loss : 1.7400 # val_loss : 1.7455 # ####
+Epoch 48 took 1978 s: loss : 1.7388 # val_loss : 1.7423 # ####
+Epoch 49 took 2094 s: loss : 1.7398 # val_loss : 1.7415 # ####
+Epoch 50 took 2074 s: loss : 1.7385 # val_loss : 1.7399 # 	BEST####
+Epoch 51 took 2083 s: loss : 1.7378 # val_loss : 1.7436 # ####
+Epoch 52 took 2057 s: loss : 1.7387 # val_loss : 1.7394 # 	BEST####
+Epoch 53 took 2053 s: loss : 1.7377 # val_loss : 1.7402 # ####
+Epoch 54 took 2092 s: loss : 1.7374 # val_loss : 1.7393 # 	BEST####
+Epoch 55 took 2059 s: loss : 1.7372 # val_loss : 1.7387 # 	BEST####
+Epoch 56 took 2063 s: loss : 1.7364 # val_loss : 1.7379 # 	BEST####
+Epoch 57 took 2072 s: loss : 1.7364 # val_loss : 1.7383 # ####
+Epoch 58 took 2088 s: loss : 1.7412 # val_loss : 1.7409 # ####
+Epoch 59 took 2052 s: loss : 1.7402 # val_loss : 1.7390 # ####
+Epoch 60 took 2051 s: loss : 1.7500 # val_loss : 1.7529 # ####
+Epoch 61 took 2090 s: loss : 1.7466 # val_loss : 1.7393 # ####
+Epoch 62 took 2041 s: loss : 1.7474 # val_loss : 1.7400 # ####
+Epoch 63 took 2019 s: loss : 1.7373 # val_loss : 1.7461 # ####
+Epoch 64 took 1983 s: loss : 1.7545 # val_loss : 1.7437 # ####
+Epoch 65 took 1959 s: loss : 1.7377 # val_loss : 1.7376 # 	BEST####
+Epoch 66 took 1940 s: loss : 1.7421 # val_loss : 1.8995 # ####
+Epoch 67 took 1921 s: loss : 1.7442 # val_loss : 1.7390 # ####
+Epoch 68 took 1955 s: loss : 1.7452 # val_loss : 1.7427 # ####
+Epoch 69 took 1971 s: loss : 1.7369 # val_loss : 1.7380 # ####
+Epoch 70 took 1979 s: loss : 1.7343 # val_loss : 1.7375 # 	BEST####
+Epoch 71 took 1972 s: loss : 1.7571 # val_loss : 1.7409 # ####
+Epoch 72 took 1970 s: loss : 1.7352 # val_loss : 1.7364 # 	BEST####
+Epoch 73 took 1965 s: loss : 1.7379 # val_loss : 1.7356 # 	BEST####
+Epoch 74 took 1943 s: loss : 1.7353 # val_loss : 1.7365 # ####
+Epoch 75 took 1955 s: loss : 1.7386 # val_loss : 1.7368 # ####
+Epoch 76 took 1940 s: loss : 1.7327 # val_loss : 1.7353 # 	BEST####
+Epoch 77 took 1974 s: loss : 1.7331 # val_loss : 1.7373 # ####
+Epoch 78 took 1944 s: loss : 1.7333 # val_loss : 1.7355 # ####
+Epoch 79 took 1977 s: loss : 1.7324 # val_loss : 1.7344 # 	BEST####
+Epoch 80 took 1968 s: loss : 1.7320 # val_loss : 1.7334 # 	BEST####
+Epoch 81 took 1951 s: loss : 1.7323 # val_loss : 1.7334 # 	BEST####
+Epoch 82 took 1969 s: loss : 1.7323 # val_loss : 1.7344 # ####
+Epoch 83 took 1998 s: loss : 1.7319 # val_loss : 1.7329 # 	BEST####
+Epoch 84 took 1953 s: loss : 1.7329 # val_loss : 1.7355 # ####
+Epoch 85 took 1950 s: loss : 1.7324 # val_loss : 1.7360 # ####
+Epoch 86 took 1920 s: loss : 1.7350 # val_loss : 1.7347 # ####
+Epoch 87 took 1944 s: loss : 1.7313 # val_loss : 1.7333 # ####
+Epoch 88 took 1977 s: loss : 1.8019 # val_loss : 1.9533 # ####
+Epoch 89 took 1946 s: loss : 1.8208 # val_loss : 1.7429 # ####
+Epoch 90 took 1946 s: loss : 1.7342 # val_loss : 1.7341 # ####
+Epoch 91 took 1922 s: loss : 1.7334 # val_loss : 1.7364 # ####
+Epoch 92 took 1964 s: loss : 1.7605 # val_loss : 1.7415 # ####
+Epoch 93 took 1922 s: loss : 1.7337 # val_loss : 1.7331 # ####
+Epoch 94 took 1950 s: loss : 1.7317 # val_loss : 1.7330 # ####
+Epoch 95 took 1937 s: loss : 1.7385 # val_loss : 1.7318 # 	BEST####
+Epoch 96 took 1930 s: loss : 1.7329 # val_loss : 1.7331 # ####
+Epoch 97 took 1931 s: loss : 1.7310 # val_loss : 1.7326 # ####
+Epoch 98 took 1934 s: loss : 1.7959 # val_loss : 1.7567 # ####
+Epoch 99 took 1924 s: loss : 1.7392 # val_loss : 1.7702 # ####
+Epoch 100 took 1920 s: loss : 1.7326 # val_loss : 1.7306 # 	BEST####
+Epoch 101 took 1922 s: loss : 1.7535 # val_loss : 1.7996 # ####
+Epoch 102 took 1937 s: loss : 1.7473 # val_loss : 1.7340 # ####
+Epoch 103 took 1953 s: loss : 1.7339 # val_loss : 1.7323 # ####
+Epoch 104 took 1968 s: loss : 1.7319 # val_loss : 1.7320 # ####
+Epoch 105 took 1985 s: loss : 1.7679 # val_loss : 1.7559 # ####
+Epoch 106 took 1940 s: loss : 1.7356 # val_loss : 1.7314 # ####
+Epoch 107 took 1938 s: loss : 1.7534 # val_loss : 1.7351 # ####
+Epoch 108 took 1958 s: loss : 1.7300 # val_loss : 1.7308 # ####
+Epoch 109 took 1984 s: loss : 1.7321 # val_loss : 1.7407 # ####
+Epoch 110 took 1962 s: loss : 1.7327 # val_loss : 1.7322 # ####
+Epoch 111 took 1969 s: loss : 1.7297 # val_loss : 1.7299 # 	BEST####
+Epoch 112 took 1966 s: loss : 1.7352 # val_loss : 1.7341 # ####
+Epoch 113 took 1988 s: loss : 1.7298 # val_loss : 1.7301 # ####
+Epoch 114 took 1999 s: loss : 1.7351 # val_loss : 1.7303 # ####
+Epoch 115 took 1985 s: loss : 1.7292 # val_loss : 1.7307 # ####
+Epoch 116 took 1994 s: loss : 1.7355 # val_loss : 1.7311 # ####
+Epoch 117 took 1977 s: loss : 1.7313 # val_loss : 1.7341 # ####
+Epoch 118 took 1987 s: loss : 1.7494 # val_loss : 1.7302 # ####
+Epoch 119 took 1985 s: loss : 1.7298 # val_loss : 1.7313 # ####
+Epoch 120 took 1968 s: loss : 1.7303 # val_loss : 1.8053 # ####
+Epoch 121 took 1974 s: loss : 1.7535 # val_loss : 1.7336 # ####
+Epoch 122 took 2005 s: loss : 1.7300 # val_loss : 1.7311 # ####
+Epoch 123 took 1955 s: loss : 1.7360 # val_loss : 1.7904 # ####
+Epoch 124 took 1967 s: loss : 1.7379 # val_loss : 1.7302 # ####
+Epoch 125 took 1973 s: loss : 1.7285 # val_loss : 1.7298 # 	BEST####
+Epoch 126 took 1990 s: loss : 1.7301 # val_loss : 1.7310 # ####
+Epoch 127 took 2029 s: loss : 1.7295 # val_loss : 1.7304 # ####
+Epoch 128 took 2001 s: loss : 1.7275 # val_loss : 1.7289 # 	BEST####
+Epoch 129 took 2171 s: loss : 1.7278 # val_loss : 1.7306 # ####
+Epoch 130 took 2080 s: loss : 1.7478 # val_loss : 1.7292 # ####
+Epoch 131 took 2065 s: loss : 1.7327 # val_loss : 1.7962 # 
