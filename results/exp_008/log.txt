@@ -1,0 +1,47 @@
+Path : /data/lisa/exp/bergegu/gazouillis/experiments/exp_008
+Dataset shape :(15075059, 161, 1)
+Ntrain : 14321306
+Nvalid : 150750
+Dim : 64
+Batch size : 64
+Nb samples per epoch : 499968
+Nb epochs : 1000
+Patience : 20
+####
+Started on 21/11/2016 at 14:53:03
+####
+Epoch 0 took 2367 s: loss : 2.1369 # val_loss : 1.9381 # 	BEST####
+Epoch 1 took 2384 s: loss : 1.8808 # val_loss : 1.8406 # 	BEST####
+Epoch 2 took 2364 s: loss : 1.8116 # val_loss : 1.7913 # 	BEST####
+Epoch 3 took 2394 s: loss : 1.7738 # val_loss : 1.7606 # 	BEST####
+Epoch 4 took 2411 s: loss : 1.7478 # val_loss : 1.7406 # 	BEST####
+Epoch 5 took 2431 s: loss : 1.7303 # val_loss : 1.7254 # 	BEST####
+Epoch 6 took 2398 s: loss : 1.7173 # val_loss : 1.7127 # 	BEST####
+Epoch 7 took 2418 s: loss : 1.7054 # val_loss : 1.7024 # 	BEST####
+Epoch 8 took 2328 s: loss : 1.6980 # val_loss : 1.6978 # 	BEST####
+Epoch 9 took 2289 s: loss : 1.6911 # val_loss : 1.6892 # 	BEST####
+Epoch 10 took 2288 s: loss : 1.6856 # val_loss : 1.6860 # 	BEST####
+Epoch 11 took 2308 s: loss : 1.6807 # val_loss : 1.6811 # 	BEST####
+Epoch 12 took 2418 s: loss : 1.6765 # val_loss : 1.6772 # 	BEST####
+Epoch 13 took 2457 s: loss : 1.6732 # val_loss : 1.6758 # 	BEST####
+Epoch 14 took 2390 s: loss : 1.6697 # val_loss : 1.6683 # 	BEST####
+Epoch 15 took 2416 s: loss : 1.6661 # val_loss : 1.6688 # ####
+Epoch 16 took 2452 s: loss : 1.6635 # val_loss : 1.6663 # 	BEST####
+Epoch 17 took 2280 s: loss : 1.6626 # val_loss : 1.6626 # 	BEST####
+Epoch 18 took 2277 s: loss : 1.6593 # val_loss : 1.6605 # 	BEST####
+Epoch 19 took 2274 s: loss : 1.6565 # val_loss : 1.6583 # 	BEST####
+Epoch 20 took 2279 s: loss : 1.6549 # val_loss : 1.6547 # 	BEST####
+Epoch 21 took 2276 s: loss : 1.6538 # val_loss : 1.6550 # ####
+Epoch 22 took 2278 s: loss : 1.6510 # val_loss : 1.6530 # 	BEST####
+Epoch 23 took 2275 s: loss : 1.6501 # val_loss : 1.6516 # 	BEST####
+Epoch 24 took 2276 s: loss : 1.6486 # val_loss : 1.6509 # 	BEST####
+Epoch 25 took 2275 s: loss : 1.6484 # val_loss : 1.6503 # 	BEST####
+Epoch 26 took 2278 s: loss : 1.6459 # val_loss : 1.6491 # 	BEST####
+Epoch 27 took 2276 s: loss : 1.6453 # val_loss : 1.6494 # ####
+Epoch 28 took 2278 s: loss : 1.6437 # val_loss : 1.6460 # 	BEST####
+Epoch 29 took 2274 s: loss : 1.6434 # val_loss : 1.6455 # 	BEST####
+Epoch 30 took 2276 s: loss : 1.6422 # val_loss : 1.6459 # ####
+Epoch 31 took 2274 s: loss : 1.6409 # val_loss : 1.6441 # 	BEST####
+Epoch 32 took 2276 s: loss : 1.6403 # val_loss : 1.6421 # 	BEST####
+Epoch 33 took 2276 s: loss : 1.6399 # val_loss : 1.6425 # ####
+Epoch 34 took 2276 s: loss : 1.6390 # val_loss : 1.6404 # 	BEST
