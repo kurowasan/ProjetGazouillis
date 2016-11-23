@@ -48,6 +48,7 @@ Temporary Items
 
 # To remove :
 twitter_config.py
+results/*
 *.pyc
 data/*
 tmp/*
