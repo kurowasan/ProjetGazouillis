@@ -105,7 +105,7 @@ class ModelSaver(Callback):
             write_log(self.path, log_string)
 
 def trainargs2strings(path, model, dataset, index_train, index_valid, D, batch_size,
-             nsamples_per_epoch, nepoch, patience):
+             nsamples_per_epoch, nepoch, patience, lr):
     settings = ""
     settings += "Path : %s"%path
     settings += "\nDataset shape :" + str(dataset.shape)
@@ -116,4 +116,5 @@ def trainargs2strings(path, model, dataset, index_train, index_valid, D, batch_s
     settings += "\nNb samples per epoch : %d"%nsamples_per_epoch
     settings += "\nNb epochs : %d"%nepoch
     settings += "\nPatience : %d"%patience
+    settings += "\nLR : %d"%lr
     return settings

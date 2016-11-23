@@ -18,5 +18,5 @@ model = models.get_LSTM_v1(params.T-1, params.D-1, params.LR, params.NHIDDEN, pa
 
 # Training
 tr.training(params.PATH_EXPERIMENT, model, dataset, index_train, index_valid,
-            params.D, params.B, params.NB_SAMPLES_PER_EPOCH, params.NB_EPOCHS, params.PATIENCE,
+            params.D, params.B, params.NB_SAMPLES_PER_EPOCH, params.NB_EPOCHS, params.PATIENCE, params.LR,
             pretrained=params.PRETRAINED, h5py=params.H5PY)
