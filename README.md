@@ -52,3 +52,10 @@ screen
 Ctrl + A + D #pour se détacher du terminal courant
 
 screen -RD #pour se rattacher au terminal précédemment détaché
+
+## Google Drive repo : résultats des expériences
+
+Description des expériences : https://docs.google.com/spreadsheets/d/1DILpAjVhUsIhuL_MLWbaCSCnX708jnK457AUSZlXMfg/edit#gid=0
+
+Résultats - Poids : https://drive.google.com/drive/folders/0BxdOJxXuhj10X0VNZ1M3RUxDcjg?usp=sharing
+
