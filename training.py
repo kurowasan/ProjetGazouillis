@@ -1,13 +1,21 @@
 __author__ = 'GazouillisTeam'
 
+import numpy as np
 import os
 import time
 from keras.callbacks import EarlyStopping
 from preprocessing import batch_generator
 from custom_logging import create_log, save_architecture, ModelSaver, trainargs2strings
 
+def load_weights(model, path, h5py=False):
+    if not h5py: # H5PY not available : save weights using np.save
+        w = np.load(path)
+        model.set_weights(w)
+    else:
+        model.load_weights(path)
+
 def training(path, model, dataset, index_train, index_valid, D, batch_size,
-             nsamples_per_epoch, nepoch, patience): # see training.py
+             nsamples_per_epoch, nepoch, patience, pretrained=None, h5py=False): # see training.py
     start = time.time()
     # Create dir (if not already done)
     if os.path.exists(path) is False:
@@ -16,14 +24,17 @@ def training(path, model, dataset, index_train, index_valid, D, batch_size,
     if os.path.exists(path_weights) is False:
         os.mkdir(os.path.abspath(path_weights))
     # Create log file
-    settings = trainargs2strings(path, model, dataset, index_train, index_valid, D, batch_size,
-                                 nsamples_per_epoch, nepoch, patience)
-    create_log(path, settings)
-    # Save architecture
-    save_architecture(model, path)
+    if pretrained is None:
+        settings = trainargs2strings(path, model, dataset, index_train, index_valid, D, batch_size,
+                                     nsamples_per_epoch, nepoch, patience)
+        create_log(path, settings)
+        # Save architecture
+        save_architecture(model, path)
+    else:
+        load_weights(model, pretrained, h5py)
     # Callbacks
     early_stopping = EarlyStopping(monitor="val_loss", patience=patience)
-    model_saver = ModelSaver(path, os.path.join(path, "weights"), monitor="val_loss", h5py=False)
+    model_saver = ModelSaver(path, os.path.join(path, "weights"), monitor="val_loss", h5py=h5py)
     # Argument to give to generators
     train_generator_args = [dataset, index_train, batch_size, D]
     valid_generator_args = [dataset, index_valid, 2*batch_size, D]
