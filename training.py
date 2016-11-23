@@ -15,7 +15,7 @@ def load_weights(model, path, h5py=False):
         model.load_weights(path)
 
 def training(path, model, dataset, index_train, index_valid, D, batch_size,
-             nsamples_per_epoch, nepoch, patience, pretrained=None, h5py=False): # see training.py
+             nsamples_per_epoch, nepoch, patience, lr, pretrained=None, h5py=False): # see training.py
     start = time.time()
     # Create dir (if not already done)
     if os.path.exists(path) is False:
@@ -26,7 +26,7 @@ def training(path, model, dataset, index_train, index_valid, D, batch_size,
     # Create log file
     if pretrained is None:
         settings = trainargs2strings(path, model, dataset, index_train, index_valid, D, batch_size,
-                                     nsamples_per_epoch, nepoch, patience)
+                                     nsamples_per_epoch, nepoch, patience, lr)
         create_log(path, settings)
         # Save architecture
         save_architecture(model, path)
