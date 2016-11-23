@@ -47,7 +47,7 @@ PATH_EXPERIMENT = "/Tmp/augustar/experiments/new_name"
 
 screen
 
-#lancer un calcul sur la machine
+ #lancer un calcul sur la machine
 
 Ctrl + A + D #pour se détacher du terminal courant
 
