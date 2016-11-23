@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e10d5b19-b662-4c9a-9fda-c0a83ded5e20" name="Default" comment="" />
+    <list default="true" id="e10d5b19-b662-4c9a-9fda-c0a83ded5e20" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Base code #CausalCNN.ipynb" afterPath="$PROJECT_DIR$/Base code #CausalCNN.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Projet.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/custom_logging.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="71" selection-end-column="67" />
+              <caret line="68" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="71" selection-end-column="67" />
               <folding>
                 <element signature="e#31#49#0" expanded="true" />
               </folding>
@@ -312,7 +315,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1600" height="860" extended-state="0" />
+    <frame x="0" y="0" width="1600" height="860" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496799" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -658,7 +661,7 @@
     <entry file="file://$PROJECT_DIR$/custom_logging.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="71" selection-end-column="67" />
+          <caret line="68" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="71" selection-end-column="67" />
           <folding>
             <element signature="e#31#49#0" expanded="true" />
           </folding>
