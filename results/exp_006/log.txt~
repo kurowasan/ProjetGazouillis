@@ -7,7 +7,6 @@ Batch size : 32
 Nb samples per epoch : 500000
 Nb epochs : 1000
 Patience : 20
-LR : 1e-3
 ####
 Started on 21/11/2016 at 14:34:39
 ####
