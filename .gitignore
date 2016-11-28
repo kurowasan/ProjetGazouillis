@@ -56,3 +56,5 @@ tweets/*
 experiments/*
 .ipynb_checkpoints/*
 Ressources/*
+*.xml
+.idea/workspace.xml
