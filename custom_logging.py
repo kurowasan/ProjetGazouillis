@@ -116,5 +116,5 @@ def trainargs2strings(path, model, dataset, index_train, index_valid, D, batch_s
     settings += "\nNb samples per epoch : %d"%nsamples_per_epoch
     settings += "\nNb epochs : %d"%nepoch
     settings += "\nPatience : %d"%patience
-    settings += "\nLR : %.5f"%lr
+    settings += "\nLR : %d"%lr
     return settings

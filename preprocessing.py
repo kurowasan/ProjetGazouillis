@@ -53,7 +53,7 @@ def onehot2tweet(batch, accepted_caracters, special_char=""):
         tweets.append(tweet)
     return tweets
 
-def batch_generator(data, index, batch_size, D, weighted_samples=False):
+def batch_generator(data, index, batch_size, D):
     # Init iterator and shuffling the dataset
     count = 0
     np.random.shuffle(index)
@@ -76,9 +76,4 @@ def batch_generator(data, index, batch_size, D, weighted_samples=False):
         del raw_batch
         count += batch_size
         # Yield
-        if not weighted_samples:
-            yield input_batch, target_batch
-        else:
-            # Weights = T / nb_of_non-zero_chararecter
-            sample_weights = float(input_batch.shape[1]) / input_batch.sum(axis=2).sum(axis=1)
-            yield input_batch, target_batch, sample_weights
+        yield input_batch, target_batch

@@ -15,12 +15,10 @@ B  = 32  # batch size
 NNEURONSH = 128
 NHIDDEN = 1
 DROPOUT_RATE = 0
-PATH_DATA = "data/dataset.npy"#"/Tmp/augustar/data/dataset.npy" #"/data/lisa/exp/bergegu/gazouillis/data/dataset.npy"
-PATH_EXPERIMENT = "experiments/causalCNN_deep_residual"
-#"/Tmp/augustar/experiments/name" #"/data/lisa/exp/bergegu/gazouillis/experiments/causalCNN_debug"
+PATH_DATA = "/Tmp/augustar/data/dataset.npy" #"/data/lisa/exp/bergegu/gazouillis/data/dataset.npy"
+PATH_EXPERIMENT = "/Tmp/augustar/experiments/name" #"/data/lisa/exp/bergegu/gazouillis/experiments/causalCNN_debug"
 PRETRAINED = None #"experiments/causalCNN_10x_kernel11_128n_BN/weights/best_model.h5py"
 H5PY = False # False
 NB_EPOCHS = 1000
 NB_SAMPLES_PER_EPOCH = B*int(5e5  / B) # around 500 000
 PATIENCE = 20
-WEIGHTED_SAMPLES = True # Set this param to True if no Masking layer is used (CausalCNN for instance)
