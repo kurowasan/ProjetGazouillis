@@ -15,7 +15,8 @@ def load_weights(model, path, h5py=False):
         model.load_weights(path)
 
 def training(path, model, dataset, index_train, index_valid, D, batch_size,
-             nsamples_per_epoch, nepoch, patience, lr, pretrained=None, h5py=False): # see training.py
+             nsamples_per_epoch, nepoch, patience, lr, weighted_samples=False,
+             pretrained=None, h5py=False):
     start = time.time()
     # Create dir (if not already done)
     if os.path.exists(path) is False:
@@ -36,8 +37,8 @@ def training(path, model, dataset, index_train, index_valid, D, batch_size,
     early_stopping = EarlyStopping(monitor="val_loss", patience=patience)
     model_saver = ModelSaver(path, os.path.join(path, "weights"), monitor="val_loss", h5py=h5py)
     # Argument to give to generators
-    train_generator_args = [dataset, index_train, batch_size, D]
-    valid_generator_args = [dataset, index_valid, 2*batch_size, D]
+    train_generator_args = [dataset, index_train, batch_size, D, weighted_samples]
+    valid_generator_args = [dataset, index_valid, 2*batch_size, D, weighted_samples]
     # Training loop
     h = model.fit_generator(batch_generator(*train_generator_args), nsamples_per_epoch, nepoch,
                             validation_data=batch_generator(*valid_generator_args),
