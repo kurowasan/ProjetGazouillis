@@ -1,0 +1,30 @@
+Path : /data/lisa/exp/bergegu/gazouillis/experiments/exp_010
+Dataset shape :(15075059, 161, 1)
+Ntrain : 14321306
+Nvalid : 150750
+Dim : 64
+Batch size : 32
+Nb samples per epoch : 500000
+Nb epochs : 1000
+Patience : 20
+####
+Started on 22/11/2016 at 14:00:57
+####
+Epoch 0 took 4493 s: loss : 2.5645 # val_loss : 2.2542 # 	BEST####
+Epoch 1 took 4491 s: loss : 2.1803 # val_loss : 2.1270 # 	BEST####
+Epoch 2 took 4492 s: loss : 2.0886 # val_loss : 2.0584 # 	BEST####
+Epoch 3 took 4491 s: loss : 2.0335 # val_loss : 2.0127 # 	BEST####
+Epoch 4 took 4493 s: loss : 1.9936 # val_loss : 1.9786 # 	BEST####
+Epoch 5 took 4494 s: loss : 1.9638 # val_loss : 1.9521 # 	BEST####
+Epoch 6 took 4494 s: loss : 1.9407 # val_loss : 1.9308 # 	BEST####
+Epoch 7 took 4495 s: loss : 1.9197 # val_loss : 1.9123 # 	BEST####
+Epoch 8 took 4494 s: loss : 1.9034 # val_loss : 1.8973 # 	BEST####
+Epoch 9 took 4493 s: loss : 1.8886 # val_loss : 1.8831 # 	BEST####
+Epoch 10 took 4494 s: loss : 1.8761 # val_loss : 1.8722 # 	BEST####
+Epoch 11 took 4495 s: loss : 1.8645 # val_loss : 1.8605 # 	BEST####
+Epoch 12 took 4494 s: loss : 1.8544 # val_loss : 1.8512 # 	BEST####
+Epoch 13 took 4492 s: loss : 1.8455 # val_loss : 1.8430 # 	BEST####
+Epoch 14 took 4493 s: loss : 1.8372 # val_loss : 1.8345 # 	BEST####
+Epoch 15 took 4491 s: loss : 1.8288 # val_loss : 1.8268 # 	BEST####
+Epoch 16 took 4492 s: loss : 1.8219 # val_loss : 1.8201 # 	BEST####
+Epoch 17 took 4493 s: loss : 1.8162 # val_loss : 1.8147 # 	BEST

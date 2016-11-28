@@ -1,0 +1,33 @@
+Path : /Tmp/augustar/experiments/exp_006
+Dataset shape :(15075059, 161, 1)
+Ntrain : 14321306
+Nvalid : 150750
+Dim : 64
+Batch size : 32
+Nb samples per epoch : 500000
+Nb epochs : 1000
+Patience : 20
+####
+Started on 21/11/2016 at 14:34:39
+####
+Epoch 0 took 3806 s: loss : 2.0449 # val_loss : 1.8689 # 	BEST####
+Epoch 1 took 3780 s: loss : 1.8166 # val_loss : 1.7830 # 	BEST####
+Epoch 2 took 3783 s: loss : 1.7583 # val_loss : 1.7419 # 	BEST####
+Epoch 3 took 3766 s: loss : 1.7294 # val_loss : 1.7189 # 	BEST####
+Epoch 4 took 3794 s: loss : 1.7102 # val_loss : 1.7051 # 	BEST####
+Epoch 5 took 3818 s: loss : 1.6981 # val_loss : 1.6960 # 	BEST####
+Epoch 6 took 3808 s: loss : 1.6895 # val_loss : 1.6882 # 	BEST####
+Epoch 7 took 3814 s: loss : 1.6806 # val_loss : 1.6794 # 	BEST####
+Epoch 8 took 3814 s: loss : 1.6755 # val_loss : 1.6741 # 	BEST####
+Epoch 9 took 3808 s: loss : 1.6701 # val_loss : 1.6726 # 	BEST####
+Epoch 10 took 3815 s: loss : 1.6663 # val_loss : 1.6690 # 	BEST####
+Epoch 11 took 3816 s: loss : 1.6624 # val_loss : 1.6632 # 	BEST####
+Epoch 12 took 3812 s: loss : 1.6593 # val_loss : 1.6592 # 	BEST####
+Epoch 13 took 3810 s: loss : 1.6568 # val_loss : 1.6607 # ####
+Epoch 14 took 3810 s: loss : 1.6542 # val_loss : 1.6536 # 	BEST####
+Epoch 15 took 3805 s: loss : 1.6515 # val_loss : 1.6524 # 	BEST####
+Epoch 16 took 3810 s: loss : 1.6492 # val_loss : 1.6509 # 	BEST####
+Epoch 17 took 3815 s: loss : 1.6493 # val_loss : 1.6490 # 	BEST####
+Epoch 18 took 3737 s: loss : 1.6468 # val_loss : 1.6475 # 	BEST####
+Epoch 19 took 3723 s: loss : 1.6446 # val_loss : 1.6482 # ####
+Epoch 20 took 3724 s: loss : 1.6435 # val_loss : 1.6448 # 	BEST
