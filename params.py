@@ -22,3 +22,4 @@ H5PY = False # False
 NB_EPOCHS = 1000
 NB_SAMPLES_PER_EPOCH = B*int(5e5  / B) # around 500 000
 PATIENCE = 20
+WEIGHTED_SAMPLES = False # Set this param to True if no Masking layer is used (CausalCNN for instance)
