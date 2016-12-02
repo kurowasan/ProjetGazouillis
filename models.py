@@ -2,7 +2,7 @@ __author__ = 'GazouillisTeam'
 
 from keras.models import Model
 from keras.layers import Input, LSTM, Masking, Dropout, TimeDistributed, Dense, Activation, ZeroPadding1D, \
-    BatchNormalization, AtrousConvolution1D, merge, Convolution1D
+    BatchNormalization, AtrousConvolution1D, merge, Convolution1D, GRU
 from keras.optimizers import Adam
 
 def get_LSTM_v1(T, D, lr, nhidden, nneuronsh, drop_rate):
