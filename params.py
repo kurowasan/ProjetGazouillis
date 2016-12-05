@@ -12,11 +12,11 @@ D = 64 # 62 chars + 1 extra char to indicate to 'end' of a tweet + 1 extra dim f
 ### Training params ###
 LR = 1e-3 # learning rate
 B  = 32  # batch size
-NNEURONSH = 128
-NHIDDEN = 1
+NNEURONSH = 512
+NHIDDEN = 2
 DROPOUT_RATE = 0
 PATH_DATA = "/Tmp/augustar/data/dataset.npy" #"/data/lisa/exp/bergegu/gazouillis/data/dataset.npy"
-PATH_EXPERIMENT = "/Tmp/augustar/experiments/name" #"/data/lisa/exp/bergegu/gazouillis/experiments/causalCNN_debug"
+PATH_EXPERIMENT = "/Tmp/augustar/experiments/exp_014" #"/data/lisa/exp/bergegu/gazouillis/experiments/causalCNN_debug"
 PRETRAINED = None #"experiments/causalCNN_10x_kernel11_128n_BN/weights/best_model.h5py"
 H5PY = False # False
 NB_EPOCHS = 1000
