@@ -5,6 +5,8 @@ from keras.layers import Input, LSTM, Masking, Dropout, TimeDistributed, Dense, 
     BatchNormalization, AtrousConvolution1D, merge, Convolution1D, GRU
 from keras.optimizers import Adam
 
+import training as tr
+
 def get_LSTM_v1(T, D, lr, nhidden, nneuronsh, drop_rate):
     # Input layer
     inputs = Input((T, D))
@@ -21,6 +23,60 @@ def get_LSTM_v1(T, D, lr, nhidden, nneuronsh, drop_rate):
     decoder = TimeDistributed(Dense(D))(dropout) # Apply the same dense layer on each timestep
     outputs = Activation("softmax") (decoder)
 
+    model = Model(input=inputs, output=outputs)
+
+    model.compile(optimizer=Adam(lr=lr), loss="categorical_crossentropy")
+
+    return model
+
+def get_multi_LSTM(T, D1, D2, lr, nhidden, nneuronsh, drop_rate):
+    # Input layer
+    text_inputs = Input((T, D1))
+    tags_inputs = Input((T, D2))
+    # Concatenation
+    inputs = merge([text_inputs, tags_inputs], mode="concat", concat_axis=-1)
+    # Masking "only-0" input features
+    masked = Masking(mask_value=0.0)(inputs)
+    # Hidden layers
+    for i in range(nhidden):
+        if i == 0:
+            hidden  = LSTM(nneuronsh, return_sequences=True)(masked)
+        else:
+            hidden  = LSTM(nneuronsh, return_sequences=True)(dropout)
+        dropout = Dropout(drop_rate)(hidden)
+
+    # Output layers : linear TimeDistributedDense + softmax
+    text_decoder = TimeDistributed(Dense(D1))(dropout) # Apply the same dense layer on each timestep
+    text_outputs = Activation("softmax") (text_decoder)
+
+    tags_decoder = TimeDistributed(Dense(D2))(dropout) # Apply the same dense layer on each timestep
+    tags_outputs = Activation("softmax") (tags_decoder)
+
+    model = Model(input=inputs, output=[text_outputs, tags_outputs])
+
+    model.compile(optimizer=Adam(lr=lr), loss="categorical_crossentropy")
+
+    return model
+
+def get_frozen_LSTM(T, Din, Dout, lr, nhidden, nneuronsh, drop_rate, pretrained, h5py=False):
+    # Input layer
+    inputs = Input((T, Din))
+    # Masking "only-0" input features
+    masked = Masking(mask_value=0.0)(inputs)
+    # Hidden layers
+    for i in range(nhidden):
+        if i == 0:
+            hidden  = LSTM(nneuronsh, return_sequences=True, trainable=False)(masked)
+        else:
+            hidden  = LSTM(nneuronsh, return_sequences=True, trainable=False)(dropout)
+        dropout = Dropout(drop_rate)(hidden)
+
+    model = Model(input=inputs, output=dropout)
+    tr.load_frozen_weights(model, pretrained, h5py)
+
+    # Output layer : linear TimeDistributedDense + softmax
+    decoder = TimeDistributed(Dense(Dout))(dropout) # Apply the same dense layer on each timestep
+    outputs = Activation("softmax") (decoder)
     model = Model(input=inputs, output=outputs)
 
     model.compile(optimizer=Adam(lr=lr), loss="categorical_crossentropy")

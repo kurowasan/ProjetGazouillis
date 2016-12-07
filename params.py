@@ -6,6 +6,14 @@ ACCEPTED_CHARS = ['\n', ' ', '!', '"', '#', '&', "'", '(', ')', '*', ',', '-', '
                   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
                   'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
                   '\x80', '\x92', '\x98', '\x9f', '\xa6', '\xe2', '\xf0']
+
+ACCEPTED_TAGS = ['#', '$', "''", '(', ')', ',', '--', '.', ':', '@', 'CC', 'CD', 'DT', 'EX',
+                 'FW', 'HTTP', 'IN', 'JJ', 'JJR', 'JJS', 'LS', 'MD', 'NN', 'NNP', 'NNPS', 'NNS',
+                 'PDT', 'POS','PRP', 'PRP$', 'RB', 'RBR', 'RBS', 'RP', 'RT', 'SYM', 'TO', 'UH', 'VB', 'VBD',
+                 'VBG', 'VBN', 'VBP', 'VBZ', 'WDT', 'WP', 'WP$', 'WRB', '``']
+ACCEPTED_TAGS_DICT = dict((tag, indice) for tag,indice in zip(ACCEPTED_TAGS, range(len(ACCEPTED_TAGS))))
+
+
 T = 161
 D = 64 # 62 chars + 1 extra char to indicate to 'end' of a tweet + 1 extra dim for padding
 
